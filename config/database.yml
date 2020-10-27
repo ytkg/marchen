@@ -49,6 +49,4 @@ test:
 #
 production:
   <<: *default
-  database: marchen_production
-  username: marchen
-  password: <%= ENV['MARCHEN_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
